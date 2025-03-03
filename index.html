@@ -109,34 +109,30 @@
             font-size: 16px;
         } 
 
-    /* 7. Media Queries */
-    @media (min-width: 1200px) {
-        .dua-grid {
-          grid-template-columns: repeat(9, 1fr);
-          grid-template-rows: repeat(2, auto);
-        }
-    }
+        .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
 
-    @media (max-width: 1199px) {
-        .dua-grid {
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(6, auto);
-        }
+@media (max-width: 480px) {
+    .nav-btn {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
     }
-
-    @media (max-width: 768px) {
-        .dua-grid {
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: repeat(9, auto);
-        }
-    }
-
-    @media (max-width: 480px) {
-        .dua-grid {
-          grid-template-columns: repeat(1, 1fr);
-          grid-template-rows: repeat(18, auto);
-        }
-    }
+}
 
     /* 8. Popup Styles */
     .popup {

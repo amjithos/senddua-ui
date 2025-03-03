@@ -1,10 +1,115 @@
+    /* Responsive Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+  }
+  
+  /* Cards Adjust for Small Screens */
+  .card {
+      position: relative;
+      width: 100%;
+      padding-top: 100%; 
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      border-radius: 10px;
+  }
+  
+  /* Overlay Responsiveness */
+  .overlay-content {
+      width: 90%;
+      max-width: 400px;
+      aspect-ratio: 1 / 1;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  
+  @media (max-width: 768px) {
+      .overlay-content {
+          max-width: 300px;
+      }
+  }
+  
+  /* Navigation Button Resizing */
+  .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .prev-btn { left: 10px; }
+  .next-btn { right: 10px; }
+  
+  @media (max-width: 480px) {
+      .nav-btn {
+          font-size: 16px;
+          width: 30px;
+          height: 30px;
+      }
+  }
+  
+  /* Popup Modal Responsiveness */
+  .popup {
+      width: 90%;
+      max-width: 350px;
+      height: auto;
+      padding: 20px;
+      text-align: center;
+  }
+  /* --------------- */
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+@media (max-width: 480px) {
+  .nav-btn {
+      font-size: 16px;
+      width: 30px;
+      height: 30px;
+  }
+}
+
+.popup {
+  width: 90%;
+  max-width: 350px;
+  height: auto; /* Let height adjust dynamically */
+  padding: 20px;
+  text-align: center;
+}
 
 
 .u-section-1 {
   background-image: url("/assets/img/background.svg"), url("/assets/img/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(7, 88, 61);
+  background-color: rgb(76, 159, 130);
   background-position: 50% 50%;
 }
 
