@@ -1,7 +1,10 @@
- .u-section-1 {
-  background-image: url("images/background.svg"), url("images/background.svg");
+
+
+.u-section-1 {
+  background-image: url("/assets/img/background.svg"), url("/assets/img/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgb(7, 88, 61);
   background-position: 50% 50%;
 }
 
